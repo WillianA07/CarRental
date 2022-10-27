@@ -1,0 +1,25 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+div.col {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#carPrice {
+    border: none;
+}
+
+#optionPrice {
+    border: none;
+}
+
+#agePrice {
+    border: none;
+}
+
+#totalCost {
+    border: none;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Car Rental</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h1 class="display-2">ACME Car Rental</h1>
+                </div>
+            </div>
+
+            <form>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="pickUpDate" class="form-label">Pickup date:</label>
+                        <input type="date" class="form-control" id="pickUpDate">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="numberOfDays" class="form-label">Number of days</label>
+                        <input type="text" class="form-control" id="numberOfDays">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="options" class="form-label">Options</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <input type="checkbox" id="tollTag">
+                        <label for="tollTag" class="form-label">Electronic Toll Tag ($3.95/day)</label>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <input type="checkbox" id="GPS">
+                        <label for="GPS" class="form-label">GPS ($2.95/day)</label>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <input type="checkbox" id="roadAssistance">
+                        <label for="roadAssistance" class="form-label">Roadside Assistance ($2.95/day)</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="under25" class="form-label">Under 25</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">
+                        <input type="radio" name="underAge" id="under25No">
+                        <label for="under25No" class="form-label">No</label>
+                    </div>
+
+                    <div class="col-1">
+                        <input type="radio" name="underAge" id="under25Yes">
+                        <label for="under25Yes" class="form-label">Yes</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">
+                        <input type="button" class="btn btn-primary" id="estimateButton" value="Estimate Total Cost">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="carPrice" class="form-label">Car Rental: $</label>
+                        <input type="text" id="carPrice" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="optionPrice" class="form-label">Options: $</label>
+                        <input type="text" id="optionPrice" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="agePrice" class="form-label">Under 25 surcharge: $</label>
+                        <input type="text" id="agePrice" readonly>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="totalCost" class="form-label">Total Due: $</label>
+                        <input type="text" id="totalCost" readonly>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
